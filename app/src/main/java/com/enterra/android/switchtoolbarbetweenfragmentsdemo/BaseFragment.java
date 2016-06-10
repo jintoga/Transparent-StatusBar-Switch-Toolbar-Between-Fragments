@@ -4,10 +4,9 @@ import android.os.Build;
 import android.support.v4.app.Fragment;
 
 /**
- * Created by Nguyen on 6/9/2016.
+ * Created by Nguyen on 6/10/2016.
  */
-public class BaseFragment extends Fragment {
-
+public abstract class BaseFragment extends Fragment {
     protected int getStatusBarHeight() {
         int result = 0;
         int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
