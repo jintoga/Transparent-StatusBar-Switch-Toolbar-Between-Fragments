@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity
         nvDrawer.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                .replace(R.id.content, new MultiLevelCollapseFragment())
+                .replace(R.id.content, new TransparentStatusBarType1Fragment())
                 .commit();
-            currentMenuItemId = nvDrawer.getMenu().getItem(3).getItemId();
+            currentMenuItemId = nvDrawer.getMenu().getItem(0).getItemId();
         }
 
         fragmentManager = getSupportFragmentManager();
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
         //Check to see which item was being clicked and perform appropriate action
         switch (menuItem.getItemId()) {
             case R.id.frag1:
-                fragment = new Fragment1();
+                fragment = new TransparentStatusBarType1Fragment();
                 break;
             case R.id.frag2:
                 fragment = new Fragment2();

@@ -12,24 +12,18 @@ import butterknife.ButterKnife;
 /**
  * Created by Nguyen on 6/9/2016.
  */
-public class Fragment1 extends BaseFragment {
+public class TransparentStatusBarType1Fragment extends BaseFragment {
 
     @Bind(R.id.toolbar)
     protected Toolbar toolbar;
-    @Bind(R.id.systemBar)
-    protected View systemBar;
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
         @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment1, container, false);
+        view = inflater.inflate(R.layout.transparent_statusbar_type1_fragment, container, false);
         ButterKnife.bind(this, view);
-        if (systemBar != null) {
-            systemBar.getLayoutParams().height = getStatusBarHeight();
-            systemBar.requestLayout();
-        }
         return view;
     }
 }
