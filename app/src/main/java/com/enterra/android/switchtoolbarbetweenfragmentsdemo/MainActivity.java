@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = new TransparentStatusBarType1Fragment();
                 break;
             case R.id.frag2:
-                fragment = new Fragment2();
+                fragment = new TransparentStatusBarType2Fragment();
                 break;
             case R.id.frag3:
                 fragment = new Fragment3();
