@@ -20,5 +20,10 @@
             android:checked="false"
             android:title="@string/frag3" />
 
+        <item
+            android:id="@+id/frag4"
+            android:checked="false"
+            android:title="@string/frag4" />
+
     </group>
 </menu>

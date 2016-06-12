@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity
         nvDrawer.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                .replace(R.id.content, new Fragment1())
+                .replace(R.id.content, new MultiLevelCollapseFragment())
                 .commit();
-            currentMenuItemId = nvDrawer.getMenu().getItem(0).getItemId();
+            currentMenuItemId = nvDrawer.getMenu().getItem(3).getItemId();
         }
 
         fragmentManager = getSupportFragmentManager();
@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.frag3:
                 fragment = new Fragment3();
+                break;
+            case R.id.frag4:
+                fragment = new MultiLevelCollapseFragment();
                 break;
         }
         // Insert the fragment by replacing any existing fragment
