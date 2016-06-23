@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="220dp"
     android:background="@drawable/header"
     android:fitsSystemWindows="true">
 
 
+    <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+        android:id="@+id/coverflow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        coverflow:coverHeight="@dimen/cover_height"
+        coverflow:coverWidth="@dimen/cover_width"
+        coverflow:maxScaleFactor="@dimen/cover_flow_scale_factor"
+        coverflow:reflectionBackroundColor="@android:color/transparent"
+        coverflow:reflectionGap="0px"
+        coverflow:reflectionOpacity="0"
+        coverflow:rotationThreshold="2.0"
+        coverflow:scalingThreshold="2.0"
+        coverflow:spacing="0.5" />
 </FrameLayout>

@@ -73,7 +73,7 @@
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="200dp"
                 app:contentScrim="@null"
                 app:layout_scrollFlags="scroll|enterAlways|snap"
                 app:statusBarScrim="@android:color/transparent">
